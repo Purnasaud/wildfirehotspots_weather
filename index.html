@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Wildfire Hotspots & Live Weather Analysis</title>
+  <link href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <span class="badge">🔥 LIVE</span>
+    <div class="title">Wildfire Hotspots & Weather Analysis</div>
+  </header>
+  <div id="map"></div>
+  <div class="info-panel">
+    <h3>📊 Live Statistics</h3>
+    <div class="info-row">
+      <span class="info-label">Fire Hotspots:</span>
+      <span class="info-value" id="fireCount">Loading...</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Weather Alerts:</span>
+      <span class="info-value" id="alertCount">Loading...</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">High Risk Fires:</span>
+      <span class="info-value" id="highRiskCount">-</span>
+    </div>
+    <div class="info-row">
+      <span class="info-label">Avg Fire Brightness:</span>
+      <span class="info-value" id="avgBrightness">-</span>
+    </div>
+  </div>
+  <div class="analysis-panel">
+    <h3>🔬 Spatial Analysis</h3>
+    <p id="analysisText">Loading analysis data...</p>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+  <!-- IMPORTANT: Load fires.js BEFORE app.js -->
+  <script src="fires.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
