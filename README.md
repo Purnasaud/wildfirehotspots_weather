@@ -6,8 +6,9 @@
 
 
 ---
+Visit [https://purnasaud.github.io/wildfirehotspots_weather/](https://purnasaud.github.io/wildfirehotspots_weather/).  
+Alerts auto-refresh every 5 minutes.
 
- Visit `https://purnasaud.github.io/wildfirehotspots_weather/`. Alerts auto-refresh every 5 minutes.
 
 ## 1) Datasets 
 
